@@ -1,0 +1,9 @@
+name: Build and test sling app
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest    
+    steps:
+      - uses: actions/checkout@master
+      - name: Execute eqela . command
+        run: /opt/eqelart/eqela .
